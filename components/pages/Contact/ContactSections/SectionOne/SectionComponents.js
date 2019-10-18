@@ -31,5 +31,34 @@ export const Send = styled.button`
     }
 `
 
+export const Overlay = styled.div`
+    position: fixed;
+    top: ${props => props.send ? '0' : '-100%'};
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+export const InnerLay = styled.div`
+    padding: 15px;
+    background-color: #f9f9f9;
+    width: 500px;
+    height: 150px;
+    text-align: center;
+    @media(max-width: 550px) {
+        width: 350px
+    }
+`
+
+export const Message = styled.p`
+    font-size: 25px;
+    color: #444;
+
+`
+
 
 

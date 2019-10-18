@@ -6,7 +6,8 @@ const initState = {
 	"message": "Hello World",
 	"name": "Ahmed Dhafer",
 	"website": "www.bixet.tech",
-	"phone": "+213659818726"
+    "phone": "+213659818726",
+    send: false
 }
 
 export const send = (data) => {
@@ -23,7 +24,27 @@ export const send = (data) => {
 
 const reducer = ( state = initState, action ) => {
 
-        return state;
+        switch (action.type) {
+            case 'SEND':
+                return {
+                    ...state,
+                    send: true,
+                    "email": "", 
+                    "subject": "",
+                    "message": "",
+                    "name": "",
+                    "website": "",
+                    "phone": "",
+
+                }
+                case 'DONE':
+                    return {
+                        ...state,
+                        send: false
+                    }
+                default:
+                    return state
+        }
 };
 
 export default reducer;

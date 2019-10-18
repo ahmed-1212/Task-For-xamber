@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 import { Container } from '../../../../UI/UI';
-import {SectionBack, Title, Send} from './SectionComponents';
+import {SectionBack, Title, Send, Overlay, Message, InnerLay} from './SectionComponents';
 import { withTranslation } from '../../../../../i18n';
 import { connect } from 'react-redux';
 import { send } from '../../../../../store/public';
@@ -18,6 +18,7 @@ class SectionOne extends Component {
         }
 
         this.props.onAddCounter(data);
+        this.props.onSend()
     }
 
     
@@ -25,6 +26,12 @@ class SectionOne extends Component {
         return (
             <SectionBack lang={this.props.t('en')}>
                 <Container>
+                    <Overlay send={this.props.send}>
+                        <InnerLay>
+                            <Message>Your Contact Details Has Been Send :) </Message>
+                            <Send onClick={this.props.onFinish}>OK</Send>
+                        </InnerLay>  
+                    </Overlay>
                     <Title>{this.props.t('contactHeader')}</Title>
                     <form>
                         <input  value={this.props.name} type="text" onChange={(event) => this.setState({name: event.target.value})} placeholder={this.props.t('name')} />
@@ -49,12 +56,15 @@ const setPropsToState = state => {
         subject: state.subject,
         website: state.website,
         phone: state.phone,
+        send: state.send
     }
 }
 
 const mapDispatchToProps = dispatch => {
     return {
         onAddCounter: (data) => dispatch(send(data)),
+        onSend: () => dispatch({type: 'SEND'}),
+        onFinish: () => dispatch({type: 'DONE'}),
     }
 };
 
