@@ -5,17 +5,11 @@ import {  i18n, withTranslation  } from '../../i18n';
 
 
 class Layout extends Component {
-    state = {
-        en : 'en',
-        ar: 'ar'
-    }
-
     
-
     render() {
         return (
             <div>
-            <Navbar changeLang={() => i18n.changeLanguage(i18n.language === this.state.en ? this.state.ar : this.state.en)}/>
+            <Navbar changeLang={() => i18n.changeLanguage(i18n.language === 'en' ? 'ar' : 'en')}/>
                 {this.props.children}
             <Footer />
             

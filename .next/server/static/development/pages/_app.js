@@ -100,10 +100,6 @@ module.exports =
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/*
-  Do not copy/paste this file. It is used internally
-  to manage end-to-end test suites.
-*/
 const NextI18Next = __webpack_require__(/*! next-i18next */ "./node_modules/next-i18next/dist/commonjs/index.js").default;
 
 const {
@@ -112,9 +108,6 @@ const {
 
 const localeSubpathVariations = {
   none: {},
-  foreign: {
-    ar: 'ar'
-  },
   all: {
     en: 'en',
     ar: 'ar'
@@ -7828,7 +7821,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../i18n */ "./i18n.js");
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_3__);
 
-var _jsxFileName = "D:\\React\\test\\pages\\_app.js";
+var _jsxFileName = "D:\\xamper-test\\pages\\_app.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 

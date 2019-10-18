@@ -139,56 +139,45 @@ const Container = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div`
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Navigation_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Navigation/Navbar/Navbar */ "./components/layout/Navigation/Navbar/Navbar.js");
-/* harmony import */ var _Navigation_Footer_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Navigation/Footer/Footer */ "./components/layout/Navigation/Footer/Footer.js");
-/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../i18n */ "./i18n.js");
-/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_4__);
-
-var _jsxFileName = "D:\\React\\test\\components\\layout\\Layout.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Navigation_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navigation/Navbar/Navbar */ "./components/layout/Navigation/Navbar/Navbar.js");
+/* harmony import */ var _Navigation_Footer_Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Navigation/Footer/Footer */ "./components/layout/Navigation/Footer/Footer.js");
+/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../i18n */ "./i18n.js");
+/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_3__);
+var _jsxFileName = "D:\\xamper-test\\components\\layout\\Layout.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
 
-class Layout extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
-  constructor(...args) {
-    super(...args);
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "state", {
-      en: 'en',
-      ar: 'ar'
-    });
-  }
-
+class Layout extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   render() {
     return __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17
+        lineNumber: 11
       },
       __self: this
-    }, __jsx(_Navigation_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      changeLang: () => _i18n__WEBPACK_IMPORTED_MODULE_4__["i18n"].changeLanguage(_i18n__WEBPACK_IMPORTED_MODULE_4__["i18n"].language === this.state.en ? this.state.ar : this.state.en),
+    }, __jsx(_Navigation_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      changeLang: () => _i18n__WEBPACK_IMPORTED_MODULE_3__["i18n"].changeLanguage(_i18n__WEBPACK_IMPORTED_MODULE_3__["i18n"].language === 'en' ? 'ar' : 'en'),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18
+        lineNumber: 12
       },
       __self: this
-    }), this.props.children, __jsx(_Navigation_Footer_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }), this.props.children, __jsx(_Navigation_Footer_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20
+        lineNumber: 14
       },
       __self: this
     }), __jsx("style", {
       js: "true",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22
+        lineNumber: 16
       },
       __self: this
     }, `
@@ -203,7 +192,7 @@ class Layout extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
 
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_4__["withTranslation"])('common')(Layout));
+/* harmony default export */ __webpack_exports__["default"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_3__["withTranslation"])('common')(Layout));
 
 /***/ }),
 
@@ -224,7 +213,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../i18n */ "./i18n.js");
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "D:\\React\\test\\components\\layout\\Navigation\\Footer\\Footer.js";
+var _jsxFileName = "D:\\xamper-test\\components\\layout\\Navigation\\Footer\\Footer.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -516,7 +505,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _UI_UI__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../UI/UI */ "./components/UI/UI.js");
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../i18n */ "./i18n.js");
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "D:\\React\\test\\components\\layout\\Navigation\\Navbar\\Navbar.js";
+var _jsxFileName = "D:\\xamper-test\\components\\layout\\Navigation\\Navbar\\Navbar.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -662,7 +651,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ContactSections_Header_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ContactSections/Header/Header */ "./components/pages/Contact/ContactSections/Header/Header.js");
 /* harmony import */ var _hoc_Hoc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../hoc/Hoc */ "./hoc/Hoc.js");
 /* harmony import */ var _ContactSections_SectionOne_SectionOne__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ContactSections/SectionOne/SectionOne */ "./components/pages/Contact/ContactSections/SectionOne/SectionOne.js");
-var _jsxFileName = "D:\\React\\test\\components\\pages\\Contact\\Contact.js";
+var _jsxFileName = "D:\\xamper-test\\components\\pages\\Contact\\Contact.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -709,7 +698,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _HeaderComponent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HeaderComponent */ "./components/pages/Contact/ContactSections/Header/HeaderComponent.js");
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../i18n */ "./i18n.js");
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "D:\\React\\test\\components\\pages\\Contact\\ContactSections\\Header\\Header.js";
+var _jsxFileName = "D:\\xamper-test\\components\\pages\\Contact\\ContactSections\\Header\\Header.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -829,56 +818,44 @@ const Send = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.button`
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _UI_UI__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../UI/UI */ "./components/UI/UI.js");
-/* harmony import */ var _SectionComponents__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SectionComponents */ "./components/pages/Contact/ContactSections/SectionOne/SectionComponents.js");
-/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../../i18n */ "./i18n.js");
-/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_4__);
-
-var _jsxFileName = "D:\\React\\test\\components\\pages\\Contact\\ContactSections\\SectionOne\\SectionOne.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _UI_UI__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../UI/UI */ "./components/UI/UI.js");
+/* harmony import */ var _SectionComponents__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SectionComponents */ "./components/pages/Contact/ContactSections/SectionOne/SectionComponents.js");
+/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../i18n */ "./i18n.js");
+/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_3__);
+var _jsxFileName = "D:\\xamper-test\\components\\pages\\Contact\\ContactSections\\SectionOne\\SectionOne.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
 
-class SectionOne extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
-  constructor(...args) {
-    super(...args);
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "state", {
-      name: '',
-      email: '',
-      tel: ''
-    });
-  }
-
+class SectionOne extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   render(props) {
-    return __jsx(_SectionComponents__WEBPACK_IMPORTED_MODULE_3__["SectionBack"], {
+    return __jsx(_SectionComponents__WEBPACK_IMPORTED_MODULE_2__["SectionBack"], {
       lang: this.props.t('en'),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16
+        lineNumber: 12
       },
       __self: this
-    }, __jsx(_UI_UI__WEBPACK_IMPORTED_MODULE_2__["Container"], {
+    }, __jsx(_UI_UI__WEBPACK_IMPORTED_MODULE_1__["Container"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17
+        lineNumber: 13
       },
       __self: this
-    }, __jsx(_SectionComponents__WEBPACK_IMPORTED_MODULE_3__["Title"], {
+    }, __jsx(_SectionComponents__WEBPACK_IMPORTED_MODULE_2__["Title"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18
+        lineNumber: 14
       },
       __self: this
     }, this.props.t('contactHeader')), __jsx("form", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19
+        lineNumber: 15
       },
       __self: this
     }, __jsx("input", {
@@ -889,7 +866,7 @@ class SectionOne extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       placeholder: this.props.t('name'),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20
+        lineNumber: 16
       },
       __self: this
     }), __jsx("input", {
@@ -900,7 +877,7 @@ class SectionOne extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       placeholder: this.props.t('email'),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21
+        lineNumber: 17
       },
       __self: this
     }), __jsx("input", {
@@ -911,14 +888,14 @@ class SectionOne extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       placeholder: this.props.t('tel'),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22
+        lineNumber: 18
       },
       __self: this
-    }), __jsx(_SectionComponents__WEBPACK_IMPORTED_MODULE_3__["Send"], {
+    }), __jsx(_SectionComponents__WEBPACK_IMPORTED_MODULE_2__["Send"], {
       onClick: this.post,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 23
+        lineNumber: 19
       },
       __self: this
     }, this.props.t('contactBtn')))));
@@ -926,7 +903,7 @@ class SectionOne extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
 
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_4__["withTranslation"])('common')(SectionOne));
+/* harmony default export */ __webpack_exports__["default"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_3__["withTranslation"])('common')(SectionOne));
 
 /***/ }),
 
@@ -952,10 +929,6 @@ const Hoc = props => props.children;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/*
-  Do not copy/paste this file. It is used internally
-  to manage end-to-end test suites.
-*/
 const NextI18Next = __webpack_require__(/*! next-i18next */ "./node_modules/next-i18next/dist/commonjs/index.js").default;
 
 const {
@@ -964,9 +937,6 @@ const {
 
 const localeSubpathVariations = {
   none: {},
-  foreign: {
-    ar: 'ar'
-  },
   all: {
     en: 'en',
     ar: 'ar'
@@ -1053,36 +1023,6 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/keys */ "core
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/promise */ "core-js/library/fn/promise");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js":
-/*!***************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js ***!
-  \***************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _defineProperty; });
-/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
-/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);
-
-function _defineProperty(obj, key, value) {
-  if (key in obj) {
-    _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-}
 
 /***/ }),
 
@@ -8456,7 +8396,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_pages_Contact_Contact__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/pages/Contact/Contact */ "./components/pages/Contact/Contact.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "D:\\React\\test\\pages\\contact\\index.js";
+var _jsxFileName = "D:\\xamper-test\\pages\\contact\\index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -8506,7 +8446,7 @@ Contact.getInitialProps = async () => ({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\React\test\pages\contact\index.js */"./pages/contact/index.js");
+module.exports = __webpack_require__(/*! D:\xamper-test\pages\contact\index.js */"./pages/contact/index.js");
 
 
 /***/ }),

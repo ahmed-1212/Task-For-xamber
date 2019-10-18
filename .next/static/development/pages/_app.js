@@ -7,19 +7,12 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/*
-  Do not copy/paste this file. It is used internally
-  to manage end-to-end test suites.
-*/
 var NextI18Next = __webpack_require__(/*! next-i18next */ "./node_modules/next-i18next/dist/commonjs/index.js")["default"];
 
 var localeSubpaths = __webpack_require__(/*! next/config */ "./node_modules/next/dist/next-server/lib/runtime-config.js")["default"]().publicRuntimeConfig.localeSubpaths;
 
 var localeSubpathVariations = {
   none: {},
-  foreign: {
-    ar: 'ar'
-  },
   all: {
     en: 'en',
     ar: 'ar'
@@ -22419,7 +22412,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "D:\\React\\test\\pages\\_app.js";
+var _jsxFileName = "D:\\xamper-test\\pages\\_app.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
 
 

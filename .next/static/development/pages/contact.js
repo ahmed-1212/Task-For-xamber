@@ -42,24 +42,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _Navigation_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Navigation/Navbar/Navbar */ "./components/layout/Navigation/Navbar/Navbar.js");
-/* harmony import */ var _Navigation_Footer_Footer__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Navigation/Footer/Footer */ "./components/layout/Navigation/Footer/Footer.js");
-/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../i18n */ "./i18n.js");
-/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _Navigation_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Navigation/Navbar/Navbar */ "./components/layout/Navigation/Navbar/Navbar.js");
+/* harmony import */ var _Navigation_Footer_Footer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Navigation/Footer/Footer */ "./components/layout/Navigation/Footer/Footer.js");
+/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../i18n */ "./i18n.js");
+/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_8__);
 
 
 
 
 
-
-
-var _jsxFileName = "D:\\React\\test\\components\\layout\\Layout.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
+var _jsxFileName = "D:\\xamper-test\\components\\layout\\Layout.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
 
 
 
@@ -68,60 +64,43 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
 var Layout =
 /*#__PURE__*/
 function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Layout, _Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Layout, _Component);
 
   function Layout() {
-    var _getPrototypeOf2;
-
-    var _this;
-
     Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Layout);
 
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Layout)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "state", {
-      en: 'en',
-      ar: 'ar'
-    });
-
-    return _this;
+    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Layout).apply(this, arguments));
   }
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Layout, [{
     key: "render",
     value: function render() {
-      var _this2 = this;
-
       return __jsx("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 11
         },
         __self: this
-      }, __jsx(_Navigation_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      }, __jsx(_Navigation_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_6__["default"], {
         changeLang: function changeLang() {
-          return _i18n__WEBPACK_IMPORTED_MODULE_10__["i18n"].changeLanguage(_i18n__WEBPACK_IMPORTED_MODULE_10__["i18n"].language === _this2.state.en ? _this2.state.ar : _this2.state.en);
+          return _i18n__WEBPACK_IMPORTED_MODULE_8__["i18n"].changeLanguage(_i18n__WEBPACK_IMPORTED_MODULE_8__["i18n"].language === 'en' ? 'ar' : 'en');
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18
+          lineNumber: 12
         },
         __self: this
-      }), this.props.children, __jsx(_Navigation_Footer_Footer__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      }), this.props.children, __jsx(_Navigation_Footer_Footer__WEBPACK_IMPORTED_MODULE_7__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 14
         },
         __self: this
       }), __jsx("style", {
         js: "true",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 16
         },
         __self: this
       }, "\n                    body {\n                        direction: ".concat(this.props.t('en'), ";\n                        margin: 0;\n                        font-family:  sans-serif;\n                        overflow-x: hidden !important;\n                    }\n                ")));
@@ -129,9 +108,9 @@ function (_Component) {
   }]);
 
   return Layout;
-}(react__WEBPACK_IMPORTED_MODULE_7__["Component"]);
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_10__["withTranslation"])('common')(Layout));
+/* harmony default export */ __webpack_exports__["default"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_8__["withTranslation"])('common')(Layout));
 
 /***/ }),
 
@@ -152,7 +131,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../i18n */ "./i18n.js");
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "D:\\React\\test\\components\\layout\\Navigation\\Footer\\Footer.js";
+var _jsxFileName = "D:\\xamper-test\\components\\layout\\Navigation\\Footer\\Footer.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -446,7 +425,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _UI_UI__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../UI/UI */ "./components/UI/UI.js");
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../i18n */ "./i18n.js");
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "D:\\React\\test\\components\\layout\\Navigation\\Navbar\\Navbar.js";
+var _jsxFileName = "D:\\xamper-test\\components\\layout\\Navigation\\Navbar\\Navbar.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -592,7 +571,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ContactSections_Header_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ContactSections/Header/Header */ "./components/pages/Contact/ContactSections/Header/Header.js");
 /* harmony import */ var _hoc_Hoc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../hoc/Hoc */ "./hoc/Hoc.js");
 /* harmony import */ var _ContactSections_SectionOne_SectionOne__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ContactSections/SectionOne/SectionOne */ "./components/pages/Contact/ContactSections/SectionOne/SectionOne.js");
-var _jsxFileName = "D:\\React\\test\\components\\pages\\Contact\\Contact.js";
+var _jsxFileName = "D:\\xamper-test\\components\\pages\\Contact\\Contact.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -639,7 +618,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _HeaderComponent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HeaderComponent */ "./components/pages/Contact/ContactSections/Header/HeaderComponent.js");
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../i18n */ "./i18n.js");
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "D:\\React\\test\\components\\pages\\Contact\\ContactSections\\Header\\Header.js";
+var _jsxFileName = "D:\\xamper-test\\components\\pages\\Contact\\ContactSections\\Header\\Header.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -779,24 +758,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _UI_UI__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../UI/UI */ "./components/UI/UI.js");
-/* harmony import */ var _SectionComponents__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./SectionComponents */ "./components/pages/Contact/ContactSections/SectionOne/SectionComponents.js");
-/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../../../i18n */ "./i18n.js");
-/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _UI_UI__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../UI/UI */ "./components/UI/UI.js");
+/* harmony import */ var _SectionComponents__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./SectionComponents */ "./components/pages/Contact/ContactSections/SectionOne/SectionComponents.js");
+/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../../i18n */ "./i18n.js");
+/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_8__);
 
 
 
 
 
-
-
-var _jsxFileName = "D:\\React\\test\\components\\pages\\Contact\\ContactSections\\SectionOne\\SectionOne.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
+var _jsxFileName = "D:\\xamper-test\\components\\pages\\Contact\\ContactSections\\SectionOne\\SectionOne.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
 
 
 
@@ -805,104 +780,88 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
 var SectionOne =
 /*#__PURE__*/
 function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(SectionOne, _Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(SectionOne, _Component);
 
   function SectionOne() {
-    var _getPrototypeOf2;
-
-    var _this;
-
     Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, SectionOne);
 
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(SectionOne)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "state", {
-      name: '',
-      email: '',
-      tel: ''
-    });
-
-    return _this;
+    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(SectionOne).apply(this, arguments));
   }
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(SectionOne, [{
     key: "render",
     value: function render(props) {
-      var _this2 = this;
+      var _this = this;
 
-      return __jsx(_SectionComponents__WEBPACK_IMPORTED_MODULE_9__["SectionBack"], {
+      return __jsx(_SectionComponents__WEBPACK_IMPORTED_MODULE_7__["SectionBack"], {
         lang: this.props.t('en'),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 12
         },
         __self: this
-      }, __jsx(_UI_UI__WEBPACK_IMPORTED_MODULE_8__["Container"], {
+      }, __jsx(_UI_UI__WEBPACK_IMPORTED_MODULE_6__["Container"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 13
         },
         __self: this
-      }, __jsx(_SectionComponents__WEBPACK_IMPORTED_MODULE_9__["Title"], {
+      }, __jsx(_SectionComponents__WEBPACK_IMPORTED_MODULE_7__["Title"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18
+          lineNumber: 14
         },
         __self: this
       }, this.props.t('contactHeader')), __jsx("form", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19
+          lineNumber: 15
         },
         __self: this
       }, __jsx("input", {
         type: "text",
         onChange: function onChange(event) {
-          return _this2.setState({
+          return _this.setState({
             name: event.target.value
           });
         },
         placeholder: this.props.t('name'),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 16
         },
         __self: this
       }), __jsx("input", {
         type: "email",
         onChange: function onChange(event) {
-          return _this2.setState({
+          return _this.setState({
             email: event.target.value
           });
         },
         placeholder: this.props.t('email'),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 17
         },
         __self: this
       }), __jsx("input", {
         type: "tel",
         onChange: function onChange(event) {
-          return _this2.setState({
+          return _this.setState({
             content: event.target.value
           });
         },
         placeholder: this.props.t('tel'),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 18
         },
         __self: this
-      }), __jsx(_SectionComponents__WEBPACK_IMPORTED_MODULE_9__["Send"], {
+      }), __jsx(_SectionComponents__WEBPACK_IMPORTED_MODULE_7__["Send"], {
         onClick: this.post,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 19
         },
         __self: this
       }, this.props.t('contactBtn')))));
@@ -910,9 +869,9 @@ function (_Component) {
   }]);
 
   return SectionOne;
-}(react__WEBPACK_IMPORTED_MODULE_7__["Component"]);
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_10__["withTranslation"])('common')(SectionOne));
+/* harmony default export */ __webpack_exports__["default"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_8__["withTranslation"])('common')(SectionOne));
 
 /***/ }),
 
@@ -940,19 +899,12 @@ var Hoc = function Hoc(props) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/*
-  Do not copy/paste this file. It is used internally
-  to manage end-to-end test suites.
-*/
 var NextI18Next = __webpack_require__(/*! next-i18next */ "./node_modules/next-i18next/dist/commonjs/index.js")["default"];
 
 var localeSubpaths = __webpack_require__(/*! next/config */ "./node_modules/next/dist/next-server/lib/runtime-config.js")["default"]().publicRuntimeConfig.localeSubpaths;
 
 var localeSubpathVariations = {
   none: {},
-  foreign: {
-    ar: 'ar'
-  },
   all: {
     en: 'en',
     ar: 'ar'
@@ -1493,36 +1445,6 @@ function _createClass(Constructor, protoProps, staticProps) {
   if (protoProps) _defineProperties(Constructor.prototype, protoProps);
   if (staticProps) _defineProperties(Constructor, staticProps);
   return Constructor;
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js":
-/*!***************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js ***!
-  \***************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _defineProperty; });
-/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
-/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);
-
-function _defineProperty(obj, key, value) {
-  if (key in obj) {
-    _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
 }
 
 /***/ }),
@@ -16303,10 +16225,10 @@ exports["default"] = _default;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcontact&absolutePagePath=D%3A%5CReact%5Ctest%5Cpages%5Ccontact%5Cindex.js!./":
-/*!********************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcontact&absolutePagePath=D%3A%5CReact%5Ctest%5Cpages%5Ccontact%5Cindex.js ***!
-  \********************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcontact&absolutePagePath=D%3A%5Cxamper-test%5Cpages%5Ccontact%5Cindex.js!./":
+/*!*******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcontact&absolutePagePath=D%3A%5Cxamper-test%5Cpages%5Ccontact%5Cindex.js ***!
+  \*******************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27123,7 +27045,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_5__);
 
 
-var _jsxFileName = "D:\\React\\test\\pages\\contact\\index.js";
+var _jsxFileName = "D:\\xamper-test\\pages\\contact\\index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
@@ -27183,13 +27105,13 @@ _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(f
 /***/ }),
 
 /***/ 2:
-/*!************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fcontact&absolutePagePath=D%3A%5CReact%5Ctest%5Cpages%5Ccontact%5Cindex.js ***!
-  \************************************************************************************************************************/
+/*!***********************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fcontact&absolutePagePath=D%3A%5Cxamper-test%5Cpages%5Ccontact%5Cindex.js ***!
+  \***********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fcontact&absolutePagePath=D%3A%5CReact%5Ctest%5Cpages%5Ccontact%5Cindex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcontact&absolutePagePath=D%3A%5CReact%5Ctest%5Cpages%5Ccontact%5Cindex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fcontact&absolutePagePath=D%3A%5Cxamper-test%5Cpages%5Ccontact%5Cindex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcontact&absolutePagePath=D%3A%5Cxamper-test%5Cpages%5Ccontact%5Cindex.js!./");
 
 
 /***/ }),

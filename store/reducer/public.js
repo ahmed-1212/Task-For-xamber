@@ -1,7 +1,7 @@
 const initState = {
-    title: '',
-    content: '',
-    author: ' ',
+    name: '',
+    email: '',
+    phone: ' ',
     send: false
 }
 

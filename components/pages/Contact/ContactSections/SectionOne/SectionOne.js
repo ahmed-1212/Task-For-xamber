@@ -4,11 +4,7 @@ import {SectionBack, Title, Send} from './SectionComponents';
 import { withTranslation } from '../../../../../i18n';
 
 class SectionOne extends Component {
-    state = {
-        name: '',
-        email: '',
-        tel: ''
-    }
+    
 
     
     render (props) {
