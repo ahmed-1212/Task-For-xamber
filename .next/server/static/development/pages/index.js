@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -97,12 +97,13 @@ module.exports =
 /*!*****************************!*\
   !*** ./components/UI/UI.js ***!
   \*****************************/
-/*! exports provided: Container */
+/*! exports provided: Container, GlobalStyle */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Container", function() { return Container; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GlobalStyle", function() { return GlobalStyle; });
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
 
@@ -127,6 +128,14 @@ const Container = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div`
         max-width: 500px;
     }
 `;
+const GlobalStyle = styled_components__WEBPACK_IMPORTED_MODULE_0__["createGlobalStyle"]`
+  body {
+    direction: ${props => props.lang};
+    margin: 0;
+    font-family:  sans-serif;
+    overflow-x: hidden !important;
+  }
+`;
 
 /***/ }),
 
@@ -145,8 +154,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Navigation_Footer_Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Navigation/Footer/Footer */ "./components/layout/Navigation/Footer/Footer.js");
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../i18n */ "./i18n.js");
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "D:\\xamper-test\\components\\layout\\Layout.js";
+/* harmony import */ var _UI_UI__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../UI/UI */ "./components/UI/UI.js");
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -154,40 +164,11 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 class Layout extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   render() {
-    return __jsx("div", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 11
-      },
-      __self: this
-    }, __jsx(_Navigation_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      changeLang: () => _i18n__WEBPACK_IMPORTED_MODULE_3__["i18n"].changeLanguage(_i18n__WEBPACK_IMPORTED_MODULE_3__["i18n"].language === 'en' ? 'ar' : 'en'),
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 12
-      },
-      __self: this
-    }), this.props.children, __jsx(_Navigation_Footer_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 14
-      },
-      __self: this
-    }), __jsx("style", {
-      js: "true",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 16
-      },
-      __self: this
-    }, `
-                    body {
-                        direction: ${this.props.t('en')};
-                        margin: 0;
-                        font-family:  sans-serif;
-                        overflow-x: hidden !important;
-                    }
-                `));
+    return __jsx("div", null, __jsx(_UI_UI__WEBPACK_IMPORTED_MODULE_4__["GlobalStyle"], {
+      lang: this.props.t('en')
+    }), __jsx(_Navigation_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      changeLang: () => _i18n__WEBPACK_IMPORTED_MODULE_3__["i18n"].changeLanguage(_i18n__WEBPACK_IMPORTED_MODULE_3__["i18n"].language === 'en' ? 'ar' : 'en')
+    }), this.props.children, __jsx(_Navigation_Footer_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
   }
 
 }
@@ -213,7 +194,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../i18n */ "./i18n.js");
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "D:\\xamper-test\\components\\layout\\Navigation\\Footer\\Footer.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -222,114 +202,16 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 const Footer = props => {
-  return __jsx(_FooterComponents__WEBPACK_IMPORTED_MODULE_1__["Main"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: undefined
-  }, __jsx(_UI_UI__WEBPACK_IMPORTED_MODULE_2__["Container"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: undefined
-  }, __jsx(_FooterComponents__WEBPACK_IMPORTED_MODULE_1__["Wrapper"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: undefined
-  }, __jsx(_FooterComponents__WEBPACK_IMPORTED_MODULE_1__["ColumnOne"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: undefined
-  }, __jsx("img", {
+  return __jsx(_FooterComponents__WEBPACK_IMPORTED_MODULE_1__["Main"], null, __jsx(_UI_UI__WEBPACK_IMPORTED_MODULE_2__["Container"], null, __jsx(_FooterComponents__WEBPACK_IMPORTED_MODULE_1__["Wrapper"], null, __jsx(_FooterComponents__WEBPACK_IMPORTED_MODULE_1__["ColumnOne"], null, __jsx("img", {
     src: "https://prowess.select-themes.com/wp-content/uploads/2018/03/logo-light.png",
-    alt: "logo",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: undefined
-  }), __jsx(_FooterComponents__WEBPACK_IMPORTED_MODULE_1__["Par"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: undefined
-  }, props.t('par'))), __jsx(_FooterComponents__WEBPACK_IMPORTED_MODULE_1__["ColumnTow"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: undefined
-  }, __jsx(_FooterComponents__WEBPACK_IMPORTED_MODULE_1__["Title"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: undefined
-  }, props.t('title')), __jsx(_FooterComponents__WEBPACK_IMPORTED_MODULE_1__["QuickNav"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: undefined
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    href: "/",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: undefined
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: undefined
-  }, props.t('linkOne')))), __jsx(_FooterComponents__WEBPACK_IMPORTED_MODULE_1__["QuickNav"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: undefined
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    href: "/about",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: undefined
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: undefined
-  }, props.t('linkTow')))), __jsx(_FooterComponents__WEBPACK_IMPORTED_MODULE_1__["QuickNav"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: undefined
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    href: "/contact",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: undefined
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: undefined
-  }, props.t('linkThree'))))))));
+    alt: "logo"
+  }), __jsx(_FooterComponents__WEBPACK_IMPORTED_MODULE_1__["Par"], null, props.t('par'))), __jsx(_FooterComponents__WEBPACK_IMPORTED_MODULE_1__["ColumnTow"], null, __jsx(_FooterComponents__WEBPACK_IMPORTED_MODULE_1__["Title"], null, props.t('title')), __jsx(_FooterComponents__WEBPACK_IMPORTED_MODULE_1__["QuickNav"], null, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    href: "/"
+  }, __jsx("a", null, props.t('linkOne')))), __jsx(_FooterComponents__WEBPACK_IMPORTED_MODULE_1__["QuickNav"], null, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    href: "/about"
+  }, __jsx("a", null, props.t('linkTow')))), __jsx(_FooterComponents__WEBPACK_IMPORTED_MODULE_1__["QuickNav"], null, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    href: "/contact"
+  }, __jsx("a", null, props.t('linkThree'))))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_4__["withTranslation"])('footer')(Footer));
@@ -364,7 +246,7 @@ const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div`
     display: flex;
     justify-content: space-around;
     @media(max-width: 576px) {
-        flex-direction: column
+        flex-direction: column;
     }
 `;
 const ColumnOne = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div`
@@ -379,12 +261,12 @@ const Title = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.h2`
     color: #fff;
     font-size: 20px;
     margin-bottom: 20px;
-    margin-top: 0
+    margin-top: 0;
 `;
 const Par = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.h3`
     color: #9c9c9c;
     font-size: 13px;
-    width: 60%
+    width: 60%;
 
 `;
 const QuickNav = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.li`
@@ -393,11 +275,11 @@ const QuickNav = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.li`
     color: #fff;
     padding: 20px 0;
     font-size: 12px;
-    font-weight: 600
+    font-weight: 600;
     a{
         color: #fff;
         text-decoration: none;
-        transition: color .3s ease-out
+        transition: color .3s ease-out;
         &:hover {
             color: #f34e3a
         }
@@ -505,7 +387,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _UI_UI__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../UI/UI */ "./components/UI/UI.js");
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../i18n */ "./i18n.js");
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "D:\\xamper-test\\components\\layout\\Navigation\\Navbar\\Navbar.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -514,122 +395,21 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 const Navbar = props => {
-  return __jsx(_NavComponents__WEBPACK_IMPORTED_MODULE_1__["Nav"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: undefined
-  }, __jsx(_UI_UI__WEBPACK_IMPORTED_MODULE_3__["Container"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: undefined
-  }, __jsx(_NavComponents__WEBPACK_IMPORTED_MODULE_1__["Wrapper"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: undefined
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: undefined
+  return __jsx(_NavComponents__WEBPACK_IMPORTED_MODULE_1__["Nav"], null, __jsx(_UI_UI__WEBPACK_IMPORTED_MODULE_3__["Container"], null, __jsx(_NavComponents__WEBPACK_IMPORTED_MODULE_1__["Wrapper"], null, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/"
   }, __jsx("a", {
-    className: "logo",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: undefined
+    className: "logo"
   }, __jsx("img", {
     className: "img",
-    src: "https://prowess.select-themes.com/wp-content/uploads/2018/03/logo-dark-heder.png",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: undefined
-  }))), __jsx("ul", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: undefined
-  }, __jsx(_NavComponents__WEBPACK_IMPORTED_MODULE_1__["NavItems"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: undefined
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: undefined
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: undefined
-  }, props.t('linkOne')))), __jsx(_NavComponents__WEBPACK_IMPORTED_MODULE_1__["NavItems"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: undefined
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/about",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: undefined
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: undefined
-  }, props.t('linkTow')))), __jsx(_NavComponents__WEBPACK_IMPORTED_MODULE_1__["NavItems"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: undefined
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/contact",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: undefined
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: undefined
-  }, props.t('linkThree')))), __jsx(_NavComponents__WEBPACK_IMPORTED_MODULE_1__["NavItems"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21
-    },
-    __self: undefined
-  }, __jsx("button", {
-    onClick: props.changeLang,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21
-    },
-    __self: undefined
+    src: "https://prowess.select-themes.com/wp-content/uploads/2018/03/logo-dark-heder.png"
+  }))), __jsx("ul", null, __jsx(_NavComponents__WEBPACK_IMPORTED_MODULE_1__["NavItems"], null, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/"
+  }, __jsx("a", null, props.t('linkOne')))), __jsx(_NavComponents__WEBPACK_IMPORTED_MODULE_1__["NavItems"], null, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/about"
+  }, __jsx("a", null, props.t('linkTow')))), __jsx(_NavComponents__WEBPACK_IMPORTED_MODULE_1__["NavItems"], null, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/contact"
+  }, __jsx("a", null, props.t('linkThree')))), __jsx(_NavComponents__WEBPACK_IMPORTED_MODULE_1__["NavItems"], null, __jsx("button", {
+    onClick: props.changeLang
   }, props.t('lang')))))));
 };
 
@@ -651,7 +431,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _HomeSections_Header_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HomeSections/Header/Header */ "./components/pages/Home/HomeSections/Header/Header.js");
 /* harmony import */ var _HomeSections_SectionOne_SectionOne__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./HomeSections/SectionOne/SectionOne */ "./components/pages/Home/HomeSections/SectionOne/SectionOne.js");
 /* harmony import */ var _hoc_Hoc__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../hoc/Hoc */ "./hoc/Hoc.js");
-var _jsxFileName = "D:\\xamper-test\\components\\pages\\Home\\Home.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -659,25 +438,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 const Home = () => {
-  return __jsx(_hoc_Hoc__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: undefined
-  }, __jsx(_HomeSections_Header_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: undefined
-  }), __jsx(_HomeSections_SectionOne_SectionOne__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: undefined
-  }));
+  return __jsx(_hoc_Hoc__WEBPACK_IMPORTED_MODULE_3__["default"], null, __jsx(_HomeSections_Header_Header__WEBPACK_IMPORTED_MODULE_1__["default"], null), __jsx(_HomeSections_SectionOne_SectionOne__WEBPACK_IMPORTED_MODULE_2__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
@@ -701,7 +462,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../../i18n */ "./i18n.js");
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "D:\\xamper-test\\components\\pages\\Home\\HomeSections\\Header\\Header.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -710,50 +470,9 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 const Header = props => {
-  return __jsx(_HeaderComponent__WEBPACK_IMPORTED_MODULE_1__["Main"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: undefined
-  }, __jsx(_UI_UI__WEBPACK_IMPORTED_MODULE_2__["Container"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: undefined
-  }, __jsx(_HeaderComponent__WEBPACK_IMPORTED_MODULE_1__["HeaderInfo"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: undefined
-  }, __jsx(_HeaderComponent__WEBPACK_IMPORTED_MODULE_1__["Title"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: undefined
-  }, props.t('homeTitle')), __jsx(_HeaderComponent__WEBPACK_IMPORTED_MODULE_1__["More"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: undefined
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    href: "/about",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: undefined
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: undefined
-  }, props.t('homeBtn')))))));
+  return __jsx(_HeaderComponent__WEBPACK_IMPORTED_MODULE_1__["Main"], null, __jsx(_UI_UI__WEBPACK_IMPORTED_MODULE_2__["Container"], null, __jsx(_HeaderComponent__WEBPACK_IMPORTED_MODULE_1__["HeaderInfo"], null, __jsx(_HeaderComponent__WEBPACK_IMPORTED_MODULE_1__["Title"], null, props.t('homeTitle')), __jsx(_HeaderComponent__WEBPACK_IMPORTED_MODULE_1__["More"], null, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    href: "/about"
+  }, __jsx("a", null, props.t('homeBtn')))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_4__["withTranslation"])('common')(Header));
@@ -899,32 +618,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _SectionComponents__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SectionComponents */ "./components/pages/Home/HomeSections/SectionOne/SectionComponents.js");
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../i18n */ "./i18n.js");
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "D:\\xamper-test\\components\\pages\\Home\\HomeSections\\SectionOne\\SectionOne.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
 const SectionOne = props => {
-  return __jsx(_SectionComponents__WEBPACK_IMPORTED_MODULE_1__["SectionBack"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: undefined
-  }, __jsx(_SectionComponents__WEBPACK_IMPORTED_MODULE_1__["Overlay"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: undefined
-  }, __jsx(_SectionComponents__WEBPACK_IMPORTED_MODULE_1__["Par"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: undefined
-  }, props.t('homeSection'))));
+  return __jsx(_SectionComponents__WEBPACK_IMPORTED_MODULE_1__["SectionBack"], null, __jsx(_SectionComponents__WEBPACK_IMPORTED_MODULE_1__["Overlay"], null, __jsx(_SectionComponents__WEBPACK_IMPORTED_MODULE_1__["Par"], null, props.t('homeSection'))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_2__["withTranslation"])('common')(SectionOne));
@@ -955,12 +655,7 @@ const Hoc = props => props.children;
 
 const NextI18Next = __webpack_require__(/*! next-i18next */ "./node_modules/next-i18next/dist/commonjs/index.js").default;
 
-const {
-  localeSubpaths
-} = __webpack_require__(/*! next/config */ "next/config").default().publicRuntimeConfig;
-
 const localeSubpathVariations = {
-  none: {},
   all: {
     en: 'en',
     ar: 'ar'
@@ -968,7 +663,7 @@ const localeSubpathVariations = {
 };
 module.exports = new NextI18Next({
   otherLanguages: ['ar'],
-  localeSubpaths: localeSubpathVariations[localeSubpaths]
+  localeSubpaths: localeSubpathVariations['all']
 });
 
 /***/ }),
@@ -8420,7 +8115,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_pages_Home_Home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/pages/Home/Home */ "./components/pages/Home/Home.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "D:\\xamper-test\\pages\\index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -8428,31 +8122,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 function Home() {
-  return __jsx(_components_layout_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, __jsx("title", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, "Home Page")), __jsx(_components_pages_Home_Home__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }));
+  return __jsx(_components_layout_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, null, __jsx("title", null, "Home Page")), __jsx(_components_pages_Home_Home__WEBPACK_IMPORTED_MODULE_2__["default"], null));
 }
 
 Home.getInitialProps = async () => ({
@@ -8463,7 +8133,7 @@ Home.getInitialProps = async () => ({
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -8868,17 +8538,6 @@ module.exports = require("i18next-browser-languagedetector");
 /***/ (function(module, exports) {
 
 module.exports = require("i18next-xhr-backend");
-
-/***/ }),
-
-/***/ "next/config":
-/*!******************************!*\
-  !*** external "next/config" ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("next/config");
 
 /***/ }),
 

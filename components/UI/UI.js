@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
 
 export const Container = styled.div`
@@ -21,5 +21,13 @@ export const Container = styled.div`
     @media(max-width: 576px) {
         max-width: 500px;
     }
+`
+export const GlobalStyle = createGlobalStyle`
+  body {
+    direction: ${props => props.lang};
+    margin: 0;
+    font-family:  sans-serif;
+    overflow-x: hidden !important;
+  }
 `
 

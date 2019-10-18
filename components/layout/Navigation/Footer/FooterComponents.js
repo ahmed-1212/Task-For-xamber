@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: space-around;
     @media(max-width: 576px) {
-        flex-direction: column
+        flex-direction: column;
     }
 `
 
@@ -30,13 +30,13 @@ export const Title = styled.h2`
     color: #fff;
     font-size: 20px;
     margin-bottom: 20px;
-    margin-top: 0
+    margin-top: 0;
 `
 
 export const Par = styled.h3`
     color: #9c9c9c;
     font-size: 13px;
-    width: 60%
+    width: 60%;
 
 `
 
@@ -46,11 +46,11 @@ export const QuickNav = styled.li`
     color: #fff;
     padding: 20px 0;
     font-size: 12px;
-    font-weight: 600
+    font-weight: 600;
     a{
         color: #fff;
         text-decoration: none;
-        transition: color .3s ease-out
+        transition: color .3s ease-out;
         &:hover {
             color: #f34e3a
         }
