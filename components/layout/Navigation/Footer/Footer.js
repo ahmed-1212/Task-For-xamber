@@ -1,7 +1,7 @@
 import React from 'react';
 import {Main, Wrapper, QuickNav, Title, ColumnOne, ColumnTow, Par } from './FooterComponents';
 import { Container } from '../../../UI/UI';
-import Link from 'next/link';
+import {Link} from '../../../../i18n';
 import { withTranslation } from '../../../../i18n'
 
 const Footer = (props) => {

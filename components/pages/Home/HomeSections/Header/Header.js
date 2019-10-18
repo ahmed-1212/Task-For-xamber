@@ -1,7 +1,7 @@
 import React from 'react';
 import {Main, HeaderInfo, Title, More} from './HeaderComponent';
 import { Container } from '../../../../UI/UI';
-import Link from 'next/link'
+import {Link} from '../../../../../i18n'
 import { withTranslation } from '../../../../../i18n'
 
 const Header = (props) => {

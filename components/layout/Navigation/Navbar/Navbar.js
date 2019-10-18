@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavItems, Nav, Wrapper } from './NavComponents';
-import Link from 'next/link'
+import {Link} from '../../../../i18n'
 import { Container } from '../../../UI/UI';
 import {  withTranslation } from '../../../../i18n'
 

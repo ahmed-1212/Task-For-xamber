@@ -7,7 +7,7 @@ export const Nav = styled.nav`
         height: 80px;
         background-color: #fff;
         .img {
-                width: 40%
+                width: 40%;
         } 
         button {
                 background: #f34e3a;
@@ -18,7 +18,7 @@ export const Nav = styled.nav`
                 border-radius: 50%;
                 color: #fff;
                 padding: 13px 12px;
-                outline: none
+                outline: none;
         }
         @media(max-width: 540px) {
             padding: 33px 0 20px
@@ -29,7 +29,7 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px
+    padding-top: 10px;
     @media(max-width: 640px) {
         flex-direction: column;
         justify-content: center;
@@ -60,7 +60,7 @@ export const NavItems = styled.li`
     a{
         color: #444;
         text-decoration: none;
-        transition: color .3s ease-out
+        transition: color .3s ease-out;
         &:hover {
             color: #f34e3a
         }
