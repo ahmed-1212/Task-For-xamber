@@ -8,6 +8,13 @@ export const SectionBack = styled.div`
         margin: 10px 0;
         padding: ${props => props.lang === 'ltr' ? '10px 0 10px 10px' : '10px 10px 10px 0px'}
     }
+    textarea {
+        width: 100%;
+        display: block;
+        margin: 10px 0;
+        height: 100px;
+        padding: ${props => props.lang === 'ltr' ? '10px 0 10px 10px' : '10px 10px 10px 0px'}
+    }
 `
 
 
