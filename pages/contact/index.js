@@ -17,4 +17,6 @@ Contact.getInitialProps = async () => ({
   namespacesRequired: ['common', 'footer', 'navbar'],
 })
 
+
+
 export default Contact;

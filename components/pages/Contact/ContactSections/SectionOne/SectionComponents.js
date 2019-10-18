@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import React, { Component } from 'react';
-import Hoc from '../../../../../hoc/Hoc'
+
 export const SectionBack = styled.div`
     margin: 80px 0;
     input {
@@ -26,7 +25,7 @@ export const Send = styled.button`
     padding: 10px 30px;
     font-size: 16px;
     transition: color .3s ease-out;
-    cursor: pointer
+    cursor: pointer;
     &:hover{
         background-color: #444
     }

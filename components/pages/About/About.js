@@ -3,9 +3,6 @@ import Header from './AboutSections/Header/Header';
 import SectionOne from './AboutSections/SectionOne/SectionOne'
 import Hoc from '../../../hoc/Hoc';
 
-
-
-
 const About = () => {
     return(
         <Hoc>

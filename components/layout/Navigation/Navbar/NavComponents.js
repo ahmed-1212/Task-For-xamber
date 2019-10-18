@@ -20,7 +20,7 @@ export const Nav = styled.nav`
                 padding: 13px 12px;
                 outline: none;
         }
-        @media(max-width: 540px) {
+        @media(max-width: 645px) {
             padding: 33px 0 20px
         }
 `

@@ -6,7 +6,7 @@ const Header = props => {
     return (
         <Main>
             <Title >
-            {props.t('aboutHeader')}
+                {props.t('aboutHeader')}
             </Title>
         </Main>
     )

@@ -9,5 +9,8 @@
     "name": "Name*",
     "email": "Email*",
     "tel": "Phone*",
+    "subject": "subject",
+    "website": "Enter Your Website",
+    "message": "Message",
     "en": "ltr"
 }

@@ -19,7 +19,7 @@ export const HeaderInfo = styled.div`
 
 export const Title = styled.h1`
     font-weight: bold;
-    color: #444;
+    color: #151515;
     font-size: 66px;
     margin-top: 4rem;
     font-family: sans-serif;
@@ -45,7 +45,7 @@ export const More = styled.button`
     font-family: sans-serif;
     width: 25%;
     transition: color .3s ease-out;
-    cursor: pointer
+    cursor: pointer;
     &:hover{
         background-color: #444
     }
